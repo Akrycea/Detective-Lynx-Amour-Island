@@ -3,7 +3,9 @@ using UnityEngine;
 
 public class Word : MonoBehaviour
 {
-    public Sentence sentence;
+    public Sentence sentenceScript;
+
+
     
     void Start()
     {
@@ -18,7 +20,7 @@ public class Word : MonoBehaviour
 
     private void OnMouseDown()
     {
-        sentence.sentence.Add(gameObject.name);
+        sentenceScript.sentence.Add(gameObject.name);
         Debug.Log("Added word '" + gameObject.name + "'");
     }
 }
